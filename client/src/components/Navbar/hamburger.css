@@ -1,0 +1,33 @@
+.hambuger-con {
+  width: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.hambuger {
+  width: 1.3rem;
+  padding: 1px;
+  background-color: #000;
+  transition: all 0.3s linear;
+}
+
+.hambuger:last-child {
+  margin-bottom: 0;
+}
+
+.hide {
+  width: 0;
+}
+
+.rotate--60 {
+  rotate: 45deg;
+  position: absolute;
+}
+
+.rotate-60 {
+  position: absolute;
+  rotate: -45deg;
+}

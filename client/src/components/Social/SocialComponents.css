@@ -1,0 +1,242 @@
+.social-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.social-header button {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1.5px solid #ef8236;
+  cursor: pointer;
+}
+
+/* ? add post css */
+.post-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.post-form-container-sub {
+  display: flex;
+  flex-direction: column;
+}
+.post-form-textarea {
+  padding: 6px 12px;
+  background: #fff;
+  border: 1px solid #ef8236;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  margin: 0.4rem 0;
+  width: 100%;
+  padding: 12px;
+  resize: none;
+  border-radius: 5px;
+}
+
+.post-form-textarea:focus {
+  outline: none;
+  border: 1px solid #ef8236;
+}
+
+.post-form-container-sub label {
+  cursor: pointer;
+  margin: 0.7rem 0 2px 0;
+}
+.post-form-container-sub input {
+  padding: 6px 12px;
+  background: #fff;
+  border: 1px solid #ef8236;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  margin: 0.4rem 0;
+}
+
+.btn-upload {
+  margin: 0.5rem 0;
+  border: 1px solid #ef8236;
+  color: #ef8236;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn-submit {
+  margin: 1.7rem 0;
+  border: 1px solid #ef8236;
+  color: #fff;
+  background-color: #ef8236;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.btn-submit:hover {
+  border: 1px solid #ef8236;
+  background-color: #ef8236cc;
+}
+
+.btn-upload:hover {
+  border: 1px solid #ef8236;
+  background-color: #ef8236cc;
+  color: #fff;
+}
+
+/* * posts css */
+.posts-contianer {
+  width: min(90%, 350px);
+  margin: 0 auto;
+  margin-top: min(2rem, 5%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.post-container {
+  border: #ef8236 1.5px solid;
+  width: 100%;
+  padding: 14px;
+  background-color: #f8f9f9;
+  border-radius: 6px;
+}
+
+.post-card-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+  width: 100%;
+  border-bottom: #f8f9f9 solid 1px;
+  padding-bottom: 0.7rem;
+  position: relative;
+}
+
+.post-card-name {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.follow-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #ef8236;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.follow-btn:hover {
+  background-color: #ef8236;
+  color: #fff;
+}
+
+.options-icon {
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.options-container {
+  position: absolute;
+  top: 110%;
+  right: 0;
+}
+
+.post-image {
+  border-radius: 8px;
+}
+
+.post-share-container {
+  margin: 8px 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  min-height: 30px;
+}
+
+.post-card-footer-container {
+  margin-top: 12px;
+}
+
+.like-icon {
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+/* * profile posts styles  */
+.profile-posts-contianer {
+  margin-top: 2rem;
+}
+.profile-posts-contianer h4 {
+  font-size: 1.4rem;
+}
+.profile-posts {
+  display: flex;
+  gap: 1rem;
+  width: min(90%, 70%);
+}
+.profile-post {
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+}
+
+.profile-post-img {
+  aspect-ratio: 1/1;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  background-position: 0%;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-posts {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profile-post-img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .profile-posts {
+    width: 100%;
+  }
+  .profile-post-img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .profile-posts {
+    width: 70%;
+    margin: 2rem auto 0;
+  }
+}

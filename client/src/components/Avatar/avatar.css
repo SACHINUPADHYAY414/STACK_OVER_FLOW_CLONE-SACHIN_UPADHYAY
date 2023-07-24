@@ -1,0 +1,22 @@
+.avatar-user-nav {
+  font-size: 15px;
+  background: #009dff;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.avatar-user-profile {
+  font-size: 18px;
+  background: #009dff;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,1 @@
+    const videoExtensionRegex = /\.(mp4|mov|avi|wmv|flv|mkv)$/i;

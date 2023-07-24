@@ -1,0 +1,111 @@
+.side-nav {
+  height: auto;
+  max-width: 100%;
+  position: sticky;
+  margin: 50px 0px;
+  padding: 20px 0px;
+  height: 100%;
+}
+
+.side-nav-div {
+  padding: 10px 0px;
+}
+
+.side-nav-div div {
+  padding: 10px;
+}
+
+.side-nav-links {
+  text-decoration: none;
+  color: #3a3a3a;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.side-nav-links:hover {
+  color: black;
+}
+
+.active {
+  font-weight: bolder;
+  color: black;
+  background-color: rgb(225, 225, 225);
+  border-right: solid 3px #ef8236;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .left-sidebar {
+    width: 164px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow ease-in-out 0.1s, transform ease-in-out 0.1s;
+    box-sizing: border-box;
+    font-size: 13px;
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    border: #9c9c9c 1px solid;
+    left: -164px;
+  }
+
+  .side-nav {
+    margin: 0px;
+  }
+
+  [data-animate="true"] {
+    animation: slide-in 0.5s forwards;
+  }
+
+  [data-animate="false"] {
+    animation: slide-out 0.5s forwards;
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(164px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(164px);
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .left-sidebar {
+    width: 164px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow ease-in-out 0.1s, transform ease-in-out 0.1s;
+    transform: translateZ(0);
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) {
+  .left-sidebar {
+    width: 164px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow ease-in-out 0.1s, transform ease-in-out 0.1s;
+    transform: translateZ(0);
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    margin-top: 62px;
+  }
+}

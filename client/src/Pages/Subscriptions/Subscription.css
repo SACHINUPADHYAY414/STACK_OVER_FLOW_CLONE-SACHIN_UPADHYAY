@@ -1,0 +1,60 @@
+.subs-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  gap: 1.2rem;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+@media only screen and (min-width: 600px) {
+  .subs-container {
+    flex-direction: row;
+  }
+}
+
+.plan-container {
+  width: min(100%, 300px);
+  margin-top: 1.3rem;
+  background-color: #f8f9f9;
+  padding: 12px 24px;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-container-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.plan-container button {
+  width: 100%;
+  margin-top: 1.3rem;
+  background-color: #ffffff;
+  border: #ef8236 1px solid;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.plan-container button:hover {
+  background-color: #ef8236;
+  color: #ffffff;
+}
+
+.text-card-details {
+  margin: 1.8rem 1.6rem;
+}

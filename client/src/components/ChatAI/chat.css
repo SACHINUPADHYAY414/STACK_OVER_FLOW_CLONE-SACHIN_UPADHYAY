@@ -1,0 +1,39 @@
+.chat-message-box {
+  display: flex;
+  gap: 1rem;
+  margin: 24px 0 10px 0;
+}
+
+.chat-code-box {
+  display: flex;
+  gap: 1rem;
+  margin: 24px 0 10px 0;
+}
+
+.code-box {
+  width: calc(100% - 50px);
+}
+
+.w-10 {
+  width: 35px;
+}
+
+.p-10 {
+  padding-top: 10px;
+}
+
+.message-box {
+  width: 100%;
+}
+
+.chat-empty-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75dvh;
+  text-align: center;
+}
+
+.chat-empty-sub-con p {
+  margin-top: 8px;
+}
